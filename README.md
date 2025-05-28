@@ -18,7 +18,7 @@
 
 3. Create .env from .env.example with the following data:
 
-server:
+   server:
    ```bash
    PORT=5000
    NODE_ENV=development
@@ -27,7 +27,7 @@ server:
    DB_PASSWORD=akljvbFDS777
    ```
 
-mobile:
+   mobile:
    ```bash
    EXPO_PUBLIC_TOKEN_KEY=TOKEN_KEY
    EXPO_PUBLIC_API_URL=http://10.0.2.2:5000/api
