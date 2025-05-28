@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# drist
+dist/
+
+# logs
+logs/
+
+# env
+.env
+.env.local
+*.env

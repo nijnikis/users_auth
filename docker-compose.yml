@@ -1,0 +1,20 @@
+version: "3"
+services:
+  server:
+
+    build: server/
+    command: npm start
+    ports:
+      - 5000:5000
+    environment:
+      PORT: ${PORT:-}
+      NODE_ENV: ${NODE_ENV:-}
+      SECRET_KEY: ${SECRET_KEY:-}
+      DB_USER: ${DB_USER:-}
+      DB_PASSWORD: ${DB_PASSWORD:-}
+  mobile:
+    build: mobile/
+    command: npx expo
+    network_mode: host
+    depends_on:
+      - server
